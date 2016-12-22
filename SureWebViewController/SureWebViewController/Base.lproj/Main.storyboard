@@ -14,22 +14,28 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G0q-FB-0sx">
+                                <state key="normal" title="百度"/>
+                                <connections>
+                                    <action selector="enterWebViewController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jTf-HM-9BI"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="G0q-FB-0sx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V5R-Hk-4cm"/>
+                            <constraint firstItem="G0q-FB-0sx" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eaD-XB-lc0"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IgH-vx-tbq">
-                        <barButtonItem key="rightBarButtonItem" title="网页" id="fIr-B1-U3k">
-                            <connections>
-                                <action selector="enterWebViewController:" destination="BYZ-38-t0r" id="5Jm-l1-MXI"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="IgH-vx-tbq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="120.98950524737631"/>
+            <point key="canvasLocation" x="988" y="775"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="C3C-cW-LoW">

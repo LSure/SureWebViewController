@@ -14,8 +14,8 @@
 		8831A8CB1DFFA2410039B63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8831A8CA1DFFA2410039B63A /* Assets.xcassets */; };
 		8831A8CE1DFFA2410039B63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8831A8CC1DFFA2410039B63A /* LaunchScreen.storyboard */; };
 		8831A8D71DFFA3180039B63A /* SureWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8831A8D61DFFA3180039B63A /* SureWebViewController.m */; };
-		8831A8DA1DFFCF0D0039B63A /* SureWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8831A8D91DFFCF0D0039B63A /* SureWebView.m */; };
-		8831A8E61E0139E50039B63A /* SureRootNaviViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8831A8E51E0139E50039B63A /* SureRootNaviViewController.m */; };
+		88E8855C1E0393B00010B40A /* sure_placeholder_error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E8855A1E0393B00010B40A /* sure_placeholder_error@2x.png */; };
+		88E8855D1E0393B00010B40A /* sure_placeholder_error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E8855B1E0393B00010B40A /* sure_placeholder_error@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,10 +31,8 @@
 		8831A8CF1DFFA2410039B63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8831A8D51DFFA3180039B63A /* SureWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SureWebViewController.h; sourceTree = "<group>"; };
 		8831A8D61DFFA3180039B63A /* SureWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureWebViewController.m; sourceTree = "<group>"; };
-		8831A8D81DFFCF0D0039B63A /* SureWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SureWebView.h; sourceTree = "<group>"; };
-		8831A8D91DFFCF0D0039B63A /* SureWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureWebView.m; sourceTree = "<group>"; };
-		8831A8E41E0139E50039B63A /* SureRootNaviViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SureRootNaviViewController.h; sourceTree = "<group>"; };
-		8831A8E51E0139E50039B63A /* SureRootNaviViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SureRootNaviViewController.m; sourceTree = "<group>"; };
+		88E8855A1E0393B00010B40A /* sure_placeholder_error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sure_placeholder_error@2x.png"; sourceTree = "<group>"; };
+		88E8855B1E0393B00010B40A /* sure_placeholder_error@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sure_placeholder_error@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +71,8 @@
 				8831A8C51DFFA2410039B63A /* ViewController.m */,
 				8831A8D51DFFA3180039B63A /* SureWebViewController.h */,
 				8831A8D61DFFA3180039B63A /* SureWebViewController.m */,
-				8831A8E41E0139E50039B63A /* SureRootNaviViewController.h */,
-				8831A8E51E0139E50039B63A /* SureRootNaviViewController.m */,
-				8831A8D81DFFCF0D0039B63A /* SureWebView.h */,
-				8831A8D91DFFCF0D0039B63A /* SureWebView.m */,
+				88E8855A1E0393B00010B40A /* sure_placeholder_error@2x.png */,
+				88E8855B1E0393B00010B40A /* sure_placeholder_error@3x.png */,
 				8831A8C71DFFA2410039B63A /* Main.storyboard */,
 				8831A8CA1DFFA2410039B63A /* Assets.xcassets */,
 				8831A8CC1DFFA2410039B63A /* LaunchScreen.storyboard */,
@@ -125,6 +121,7 @@
 				TargetAttributes = {
 					8831A8BA1DFFA2410039B63A = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UH3CV2MYJP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,7 +149,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88E8855C1E0393B00010B40A /* sure_placeholder_error@2x.png in Resources */,
 				8831A8CE1DFFA2410039B63A /* LaunchScreen.storyboard in Resources */,
+				88E8855D1E0393B00010B40A /* sure_placeholder_error@3x.png in Resources */,
 				8831A8CB1DFFA2410039B63A /* Assets.xcassets in Resources */,
 				8831A8C91DFFA2410039B63A /* Main.storyboard in Resources */,
 			);
@@ -166,9 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8831A8C61DFFA2410039B63A /* ViewController.m in Sources */,
-				8831A8DA1DFFCF0D0039B63A /* SureWebView.m in Sources */,
 				8831A8C31DFFA2410039B63A /* AppDelegate.m in Sources */,
-				8831A8E61E0139E50039B63A /* SureRootNaviViewController.m in Sources */,
 				8831A8D71DFFA3180039B63A /* SureWebViewController.m in Sources */,
 				8831A8C01DFFA2410039B63A /* main.m in Sources */,
 			);
@@ -288,10 +285,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UH3CV2MYJP;
 				INFOPLIST_FILE = SureWebViewController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yongche.sure.SureWebViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sure.SureWebViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -300,10 +299,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UH3CV2MYJP;
 				INFOPLIST_FILE = SureWebViewController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yongche.sure.SureWebViewController;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sure.SureWebViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

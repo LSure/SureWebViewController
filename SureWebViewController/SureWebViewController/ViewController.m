@@ -17,14 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"网页" style:UIBarButtonItemStylePlain target:self action:@selector(enterWebViewController:)];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)enterWebViewController:(id)sender {
+- (IBAction)enterWebViewController:(id)sender {
     SureWebViewController *surevc = [[SureWebViewController alloc]init];
-    surevc.url = @"http://www.baidu.com";
+    surevc.url = @"https://www.baidu.com";
+    surevc.canDownRefresh = YES;
     [self.navigationController pushViewController:surevc animated:YES];
 }
 

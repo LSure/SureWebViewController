@@ -12,6 +12,6 @@
 
 @property (nonatomic, copy) NSString *url;
 
-- (void)showRightBarButtonItem;
+@property (nonatomic, assign) BOOL canDownRefresh;
 
 @end

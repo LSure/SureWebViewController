@@ -87,7 +87,13 @@ static CGFloat const NAVI_HEIGHT = 64;
 
 - (void)dealloc {
     [_wk_WebView removeObserver:self forKeyPath:@"estimatedProgress"];
+    [_wk_WebView stopLoading];
+    [_webView stopLoading];
+    _wk_WebView.UIDelegate = nil;
+    _wk_WebView.navigationDelegate = nil;
+    _webView.delegate = nil;
 }
+
 
 - (UIProgressView*)loadingProgressView {
     if (!_loadingProgressView) {
@@ -260,6 +266,20 @@ static CGFloat const NAVI_HEIGHT = 64;
 //页面加载失败
 - (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(null_unspecified WKNavigation *)navigation withError:(NSError *)error{
     webView.hidden = YES;
+}
+
+//HTTPS认证
+- (void)webView:(WKWebView *)webView didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge completionHandler:(void (^)(NSURLSessionAuthChallengeDisposition disposition, NSURLCredential *credential))completionHandler {
+    if ([challenge.protectionSpace.authenticationMethod isEqualToString:NSURLAuthenticationMethodServerTrust]) {
+        if ([challenge previousFailureCount] == 0) {
+            NSURLCredential *credential = [NSURLCredential credentialForTrust:challenge.protectionSpace.serverTrust];
+            completionHandler(NSURLSessionAuthChallengeUseCredential, credential);
+        } else {
+            completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
+        }
+    } else {
+        completionHandler(NSURLSessionAuthChallengeCancelAuthenticationChallenge, nil);
+    }
 }
 
 - (void)didReceiveMemoryWarning {
